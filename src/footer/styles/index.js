@@ -36,6 +36,4 @@ Footer.Break = function footerBreak({ children, ...restProps }) {
 Footer.BreakIcon = function footerBreakIcon({ children, ...restProps }) {
    return <BreakIcon {...restProps}>{children}</BreakIcon>
 }
-Footer.BreakIcon = function footerBreakIcon({ children, ...restProps }) {
-   return <BreakIcon {...restProps}>{children}</BreakIcon>
-}
+
