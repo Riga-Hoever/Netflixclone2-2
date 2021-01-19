@@ -1,0 +1,172 @@
+.nav_container {
+  /*header*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: white;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_container_black {
+  background-color: #111;
+}
+.nav_logo {
+  position: fixed;
+  left: 15px;
+  top: 1.5rem;
+  width: 80px;
+  object-fit: contain;
+}
+
+/* nav right */
+.nav_font  {
+  position: fixed;
+  right: 80px;
+  width: 200px;
+  top: 26px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 10px;
+}
+.nav_font1 {
+  color: white;
+  text-decoration: none;
+}
+.nav_font2_avatar {
+  position: fixed;
+  right: 45px;
+  width: 25px;
+  top: 22px;
+  object-fit: contain;
+}
+.nav_font2 {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+/* NavLeft */
+
+.nav_test {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+
+.nav_menu {
+  position: fixed;
+  display: flex;  
+  justify-content:space-around;
+  width: 40%;
+}
+.nav_item {
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+.nav_links {
+  color: white;
+  text-decoration: none;
+  /* padding: 0.5rem 1rem; */
+}
+.nav_links:hover {
+  background-color: #fdc40a67;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+/* .fa_bars {
+  color: rgb(255, 255, 255);
+} */
+
+.bladeren {
+  /* display: none; */
+  color: rgb(240, 8, 8);
+}
+/* .nav_links-mobile {
+  display: none;
+} */
+
+.menu_icon {
+  display: none;
+}
+
+/* 960px */
+
+@media screen and (max-width: 960px) {
+  /* .navbartestItems {
+    position: relative;
+  } */
+  .nav_menu {
+    display: none;
+  }
+  /* .nav_menu.active {
+    display:flex;
+    flex-direction: column;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 120px;
+    left: 5%;
+  } */
+
+  .menu_icon {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 100px;
+    font-size: 1rem;
+    cursor: pointer;
+
+  }
+ 
+ 
+
+  /* .nav_item {
+    background-color: rgba(12, 12, 12, 0.596);
+    top: 250px;
+    align-items: center;
+  } */
+ /* .nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 55px;
+    font-size: 0.001rem;
+
+  } */
+
+
+ 
+
+  .bladeren {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+
+  }
+
+  .bladeren.active {
+    display:flex;
+    flex-direction: column;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 120px;
+    left: 5%;
+  }
+
+ 
+}
+
+
+
