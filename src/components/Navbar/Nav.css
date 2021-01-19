@@ -128,7 +128,7 @@ a:link,
 a:visited {
   /* background-color: white; */
   color: white;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
 }
