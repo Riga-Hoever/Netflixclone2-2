@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./components/Navbar/Nav";
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Row from "./Row";
@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
+        <Navbar />
         
         {/* <main style={{ marginTop: "1px" }}>
           {" "} */}
