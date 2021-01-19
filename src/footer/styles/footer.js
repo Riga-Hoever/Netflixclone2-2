@@ -17,12 +17,12 @@ export const Row = styled.div`
   grid-gap: 15px;
   padding-top: 15px;
   margin-left: 19%;
- @media screen for (max-width: 1366) {
-    margin-right: 19px;
-    text-align:left;
-    margin-left:20%;
-    grid-gap:10px;
+
+  @media  (max-width: 1366px) {
+    margin-left:8.1%;
+    h
   }
+
   
 `;
 
