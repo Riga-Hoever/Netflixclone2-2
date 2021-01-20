@@ -56,6 +56,10 @@ export const Icon = styled.i`
   margin-left: 22.4%;
   width: 9%;
   color: silver;
+  @media (min-width:320px) i{
+    margin-left: 26%;
+    width: 40%;
+  }
   @media (max-width: 360px) {
     margin-left: 19%;
     
@@ -63,15 +67,17 @@ export const Icon = styled.i`
 
   @media (max-width: 980px) {
     padding:15px;
-    margin-left: 22%;
-    width: 15%;
-    font-size:90%;
+    margin-left: 28%;
+    width: 45%;
+    font-size:100%;
+   
   }
-  @media (max-width: 1366px) {
+  @media (min-width: 1366px) {
     margin-left: 10%;
     width: 15%;
     
   }
+ 
 `;
 
 export const Link1 = styled.a`
