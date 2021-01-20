@@ -57,16 +57,20 @@ export const Icon = styled.i`
   width: 9%;
   color: silver;
   @media (max-width: 360px) {
-    margin-left: 15%;
+    margin-left: 19%;
+    
   }
 
   @media (max-width: 980px) {
+    padding:15px;
     margin-left: 22%;
     width: 15%;
+    font-size:90%;
   }
   @media (max-width: 1366px) {
     margin-left: 10%;
     width: 15%;
+    
   }
 `;
 
