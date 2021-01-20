@@ -6,10 +6,6 @@ export const Container = styled.div`
   margin-left: auto;
   max-width: 1080px;
   flex-direction: column;
-
-  @media (max-width: 1000px) {
-    padding: 70px 30px;
-  }
 `;
 export const Row = styled.div`
   display: grid;
@@ -17,13 +13,20 @@ export const Row = styled.div`
   grid-gap: 15px;
   padding-top: 15px;
   margin-left: 19%;
-
-  @media  (max-width: 1366px) {
-    margin-left:8.1%;
-    h
+  @media (max-width: 360px) {
+    width: 70%;
+    margin-left: 15%;
   }
-
-  
+  @media (max-width: 980px) {
+    width: 70%;
+    margin-left: 15%;
+  }
+  @media (max-width: 1440px) {
+    margin-left: 15%;
+  }
+  @media (max-width: 1366px) {
+    margin-left: 11.4%;
+  }
 `;
 
 export const Column = styled.div`
@@ -34,7 +37,7 @@ export const Column = styled.div`
   max-width: 1000px;
   flex-direction: column;
   @media (max-width: 1080px) {
-    padding: 70px 30px;
+    padding: 21px;
   }
 `;
 
@@ -47,21 +50,28 @@ export const Link = styled.a`
 `;
 
 export const Icon = styled.i`
-display:flex;
-justify-content:space-between;
-font-size:27px;
-margin-left:22.4%;
-width:9%;
-color:silver;
-@media  (max-width: 980px) {
-    margin-left:13%;
-    width:15%
+  display: flex;
+  justify-content: space-between;
+  font-size: 27px;
+  margin-left: 22.4%;
+  width: 9%;
+  color: silver;
+  @media  (max-width: 360px) {
+  
+    margin-left:15%;
+    h
   }
-@media  (max-width: 1366px) {
-    margin-left:13%;
-    width:15%
+ 
+  @media (max-width:980px) {
+    margin-left: 22%;
+    width: 15%;
   }
-`
+  @media (max-width: 1366px)   {
+   margin-left:16.5%;
+    width: 15%;
+    
+  }
+`;
 
 export const Link1 = styled.a`
   margin-left: 5px;
@@ -93,6 +103,4 @@ export const Break = styled.div`
   flex-basis: 100%;
   height: 0;
 `;
-export const BreakIcon = styled.div`
- 
-`;
+export const BreakIcon = styled.div``;
