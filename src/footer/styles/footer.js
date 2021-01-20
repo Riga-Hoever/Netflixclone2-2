@@ -65,7 +65,7 @@ export const Icon = styled.i`
     width: 15%;
   }
   @media (max-width: 1366px) {
-    margin-left: 14%;
+    margin-left: 10%;
     width: 15%;
   }
 `;
