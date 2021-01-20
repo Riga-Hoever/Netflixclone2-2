@@ -25,7 +25,7 @@ export const Row = styled.div`
     margin-left: 15%;
   }
   @media (max-width: 1366px) {
-    margin-left: 11.4%;
+    margin-left:5.1%;
   }
 `;
 
@@ -59,7 +59,7 @@ export const Icon = styled.i`
   @media  (max-width: 360px) {
   
     margin-left:15%;
-    h
+    
   }
  
   @media (max-width:980px) {
@@ -67,7 +67,7 @@ export const Icon = styled.i`
     width: 15%;
   }
   @media (max-width: 1366px)   {
-   margin-left:16.5%;
+   margin-left:10%;
     width: 15%;
     
   }
