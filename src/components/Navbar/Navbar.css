@@ -85,7 +85,7 @@
 
 /* 960px */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1920px) {
   /* .navbartestItems {
     position: relative;
   } */
@@ -122,21 +122,15 @@
     cursor: pointer;
 
   } */
- 
- 
-
-  
- 
-
-
- 
-
-  
-
-  
-
- 
 }
+
+/* @media screen and (min-width: 576px) 
+@media screen and (max-width: 576px) 
+@media screen and (max-width: 768px) 
+@media screen and (max-width: 992px) 
+@media screen and (max-width: 1200px)  */
+
+
 
 
 
