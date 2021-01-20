@@ -25,7 +25,7 @@ export const Row = styled.div`
     margin-left: 15%;
   }
   @media (max-width: 1366px) {
-    margin-left:5.1%;
+    margin-left: 5.1%;
   }
 `;
 
@@ -56,20 +56,17 @@ export const Icon = styled.i`
   margin-left: 22.4%;
   width: 9%;
   color: silver;
-  @media  (max-width: 360px) {
-  
-    margin-left:15%;
-    
+  @media (max-width: 360px) {
+    margin-left: 15%;
   }
- 
-  @media (max-width:980px) {
+
+  @media (max-width: 980px) {
     margin-left: 22%;
     width: 15%;
   }
-  @media (max-width: 1366px)   {
-   margin-left:10%;
+  @media (max-width: 1366px) {
+    margin-left: 14%;
     width: 15%;
-    
   }
 `;
 
