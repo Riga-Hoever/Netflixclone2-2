@@ -43,14 +43,14 @@ export function FooterContainer() {
           <Footer.Link href="#">Help Centre</Footer.Link>
           <Footer.Link href="#">Jobs</Footer.Link>
           <Footer.Link href="#">Terms of Use</Footer.Link>
-          <Footer.Link href="#"></Footer.Link>
+          <Footer.Break></Footer.Break>
         </Footer.Column>
 
         <Footer.Column>
           <Footer.Link href="#">Account</Footer.Link>
           <Footer.Link href="#">Redeem Gift Cards</Footer.Link>
           <Footer.Link href="#">Privacy</Footer.Link>
-          <Footer.Link href="#"></Footer.Link>
+          <Footer.Break></Footer.Break>
         </Footer.Column>
 
         <Footer.Column>
@@ -63,3 +63,4 @@ export function FooterContainer() {
     </footer>
   );
 }
+
