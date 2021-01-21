@@ -59,8 +59,8 @@
   position: fixed;
   display: flex;  
   justify-content:space-around;
-  margin-left: 80px;
-  width: 500px;
+  margin-left: 6.25rem;
+  width: 31.25rem;
 }
 .nav_item {
   display: none;
