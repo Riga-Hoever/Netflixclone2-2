@@ -24,7 +24,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
     width: "100%",
     playerVars: {
       //https://developers.google.com/youtube/player_parameters#?v=46646454546
-      autoplay: 0,
+      autoplay: 1,
+      controls: 0,
+      modestbranding : 1
+
     },
   };
 
@@ -48,6 +51,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
       <div className="row_posters">
         {movies.map(movie => {
+          console.log(movie);
           return <img
               key={movie.id}
               onClick={() => handleClick(movie)}
@@ -58,6 +62,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
           
         })}
       </div>
+      {console.log(trailerUrl)}
       {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );
