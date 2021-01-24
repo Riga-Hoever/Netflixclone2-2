@@ -39,6 +39,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
         })
         .catch((error) => console.log(error));
     }
+
   };
 
   console.table(movies);
@@ -58,8 +59,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
           
         })}
       </div>
-      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+      
+      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts}/>}
     </div>
+
   );
 }
 
