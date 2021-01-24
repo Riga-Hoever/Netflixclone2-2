@@ -43,7 +43,7 @@ function Banner() {
           {movie?.title || movie?.name || movie?.original_name}
         </h1> */}
         <img
-          className="logo"
+          className="banner_movielogo"
           src={movie?.hdmovielogo[0].url}
           alt={movie?.title + "logo"}
         />
