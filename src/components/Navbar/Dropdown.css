@@ -30,11 +30,11 @@
   padding: 16px;
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .fa-caret-down {
     display: none;
   }
-}
+} */
 
 /* @media screen and (max-width: 992px) {
   .dropdown-menu {
