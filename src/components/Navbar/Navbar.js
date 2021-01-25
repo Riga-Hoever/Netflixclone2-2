@@ -96,7 +96,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/Bladeren"
+              to="/"
               className="nav_links"
               onClick={handleClick}
             >

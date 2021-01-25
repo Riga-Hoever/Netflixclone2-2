@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
+// import Nav from "./components/Navbar/Navoud"
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Row from "./Row";
@@ -24,6 +25,8 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
+        {/* <Nav /> */}
+
         
         {/* <main style={{ marginTop: "1px" }}>
           {" "} */}
