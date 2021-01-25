@@ -7,12 +7,17 @@ export const Container = styled.div`
   max-width: 1080px;
   flex-direction: column;
 `;
+
+
+
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 15px;
   padding-top: 15px;
   margin-left: 19%;
+
+ 
 
   @media only screen and (max-width: 767px), screen and (min-width: 576px) {
     margin-left: 19%;
@@ -24,22 +29,26 @@ export const Row = styled.div`
     padding-right:50px; 
   }
 
-  @media only screen and (max-width: 991px), screen and (min-width:768px ;) {
+  @media only screen and (max-width: 991px), screen and (min-width:768px) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     margin-left:5%;
 
   }
 
-  @media only screen and (max-width: 1199px), screen and (min-width:992px ;) {
+  @media only screen and (max-width: 1199px), screen and (min-width:992px) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     margin-left:5%;
   }
 
-
-
+  @media only screen and  (min-width: 1200px ) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    margin-left:5%;
+  }
 `;
+
 
 export const Column = styled.div`
   display: flex;
@@ -48,9 +57,11 @@ export const Column = styled.div`
   margin-left: 65px;
   max-width: 1000px;
   flex-direction: column;
+
   @media (max-width: 1080px) {
     padding: 21px;
   }
+
   @media only screen and (max-width: 767px), screen and (min-width: 576px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320%, 1fr));
@@ -65,18 +76,23 @@ export const Column = styled.div`
     width:50%;
   }
 
+
+
+
+
   @media only screen and (max-width: 1199px), screen and (min-width:992px ;) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
     margin-left:-10%;
   }
 
-
-
-
-
-   
+  @media only screen and  (min-width: 1200px ) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    margin-left:5%;
   }
+
+
 `;
 
 export const Link = styled.a`
@@ -98,6 +114,7 @@ export const Icon = styled.i`
   width: 9%;
   color: silver;
 
+
   @media only screen and (max-width: 767px), screen and (min-width: 576px) {
     margin-left: 14%;
     font-size: 150%;
@@ -110,6 +127,11 @@ export const Icon = styled.i`
 
   @media only screen and (max-width: 1199px), screen and (min-width:992px ;) {
     margin-left: 5%;
+  }
+
+  @media only screen and  (min-width: 1200px ) {
+    margin-left:5%;
+    width:16%;
   }
 
 
