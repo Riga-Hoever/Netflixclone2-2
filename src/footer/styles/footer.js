@@ -14,33 +14,31 @@ export const Row = styled.div`
   padding-top: 15px;
   margin-left: 19%;
 
-  @media only screen and (max-width: 576px), screen and (min-width: 575px) {
+  @media only screen and (max-width: 767px), screen and (min-width: 576px) {
     margin-left: 19%;
     font-size: 150%;
-
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 2fr));
     grid-gap: 10px;
     margin-left:5%;
-    padding-right:50px;
-    
-    
+    padding-right:50px; 
   }
 
-  @media (max-width: 360px) {
-    width: 70%;
-    margin-left: 15%;
+  @media only screen and (max-width: 991px), screen and (min-width:768px ;) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    margin-left:5%;
+
   }
-  @media (max-width: 980px) {
-    width: 70%;
-    margin-left: 15%;
+
+  @media only screen and (max-width: 1199px), screen and (min-width:992px ;) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    margin-left:5%;
   }
-  @media (max-width: 1440px) {
-    margin-left: 15%;
-  }
-  @media (max-width: 1366px) {
-    margin-left: 5.1%;
-  }
+
+
+
 `;
 
 export const Column = styled.div`
@@ -53,11 +51,30 @@ export const Column = styled.div`
   @media (max-width: 1080px) {
     padding: 21px;
   }
-  @media only screen and (max-width: 576px), screen and (min-width: 575px) {
+  @media only screen and (max-width: 767px), screen and (min-width: 576px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320%, 1fr));
     grid-gap: 15px;
     margin-left: 15%;
+
+    @media only screen and (max-width: 991px), screen and (min-width:768px ;) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350%, 1fr));
+    grid-gap: 15px;
+    margin-left: 15%;
+    width:50%;
+  }
+
+  @media only screen and (max-width: 1199px), screen and (min-width:992px ;) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
+    margin-left:-10%;
+  }
+
+
+
+
+
    
   }
 `;
@@ -68,7 +85,7 @@ export const Link = styled.a`
   margin-bottom: 20px;
   font-size: 15px;
   text-decoration: none;
-  @media only screen and (max-width: 576px), screen and (min-width: 575px) {
+  @media only screen and (max-width: 767px), screen and (min-width: 576px) {
    margin-bottom:0px;
   }
 `;
@@ -81,11 +98,21 @@ export const Icon = styled.i`
   width: 9%;
   color: silver;
 
-  @media only screen and (max-width: 576px), screen and (min-width: 575px) {
+  @media only screen and (max-width: 767px), screen and (min-width: 576px) {
     margin-left: 14%;
     font-size: 150%;
     width: 25%;
   }
+
+  @media only screen and (max-width: 991px), screen and (min-width:768px ;) {
+    margin-left: 13%;
+  }
+
+  @media only screen and (max-width: 1199px), screen and (min-width:992px ;) {
+    margin-left: 5%;
+  }
+
+
 `;
 
 export const Link1 = styled.a`
