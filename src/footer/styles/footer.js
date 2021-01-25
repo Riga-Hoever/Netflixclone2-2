@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 
+
 export const Container = styled.div`
   display: flex;
   padding: 70px 56px;
@@ -96,3 +97,16 @@ export const Break = styled.div`
 export const BreakIcon = styled.div`
  
 `;
+
+export const footerButton = styled.button`
+  background:black;
+  color:white;
+  border:3px solid red;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+  
+`;
+
+
