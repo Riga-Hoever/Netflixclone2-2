@@ -130,7 +130,8 @@
   .nav_item {
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: 4.5rem;
+    margin-left: 0.5rem;
 
   }
 
@@ -158,7 +159,8 @@
   .nav_item {
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: 4.5rem;
+    margin-left: 0.5rem;
 
   }
 
