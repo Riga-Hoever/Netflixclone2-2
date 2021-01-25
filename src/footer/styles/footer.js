@@ -56,14 +56,14 @@ export const Icon = styled.i`
   margin-left: 22.4%;
   width: 9%;
   color: silver;
-  
-  @media screen (max-width: 575px) and (min-width: 576px) {
+
+  @media only screen and (max-width: 576px), screen and (min-width: 575px){
     margin-left: 10%;
     font-size: 20%;
     width: 70%;
   }
 
-  @media (min-width: 1366px) {
+  @media all (min-width: 1366px) {
     margin-left: 10%;
     width: 15%;
   }
