@@ -60,7 +60,7 @@ function Banner() {
         {/* 2 buttons */}
         <div className="banner_buttons">
           <button className="banner_button" onClick={playTrailer}>Play</button>
-          <button className="banner_button">Meer informatie </button>
+          <button className="banner_button">Meer informatie</button>
         </div>
 
         {/* description */}
