@@ -24,7 +24,6 @@ export const Row = styled.div`
     margin-left:20%;
     grid-gap:10px;
   }
-  
 `;
 
 export const Column = styled.div`
@@ -94,19 +93,8 @@ export const Break = styled.div`
   flex-basis: 100%;
   height: 0;
 `;
-export const BreakIcon = styled.div`
- 
-`;
 
-export const footerButton = styled.button`
-  background:black;
-  color:white;
-  border:3px solid red;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-  
-`;
+
+
 
 

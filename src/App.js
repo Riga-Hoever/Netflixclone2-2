@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Row from "./Row";
 import requests from "./requests";
+import InfoButton from "./components/MoreInfoButton/InfoButton";
 
 // eigen import //
 // import { Series, Films, Nieuw, Lijst, Kijk } from "./pages";
@@ -16,18 +17,12 @@ import Kijk from "./pages/Kijk";
 import Banner from "./components/Banner";
 import { FooterContainer } from "./footer/container/footer";
 
-//605573c650780e682a02144be1ed2304//
-//https://api.themoviedb.org/3/movie/550?api_key=605573c650780e682a02144be1ed2304//
-
 function App() {
   return (
     <Router>
       <div className="App">
         <Nav />
-        
-        {/* <main style={{ marginTop: "1px" }}>
-          {" "} */}
-        {/*tijdelijk*/}
+
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Series" component={Series} />
@@ -36,7 +31,6 @@ function App() {
           <Route path="/lijst" component={Lijst} />
           <Route path="/Kijk" component={Kijk} />
         </Switch>
-        {/* </main> */}
 
         <FooterContainer />
       </div>
@@ -48,6 +42,7 @@ function Home() {
   return (
     <div className="app">
       <Banner />
+
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}

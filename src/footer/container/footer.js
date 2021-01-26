@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../styles";
 import { footer } from "./footer";
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -25,11 +24,8 @@ export function FooterContainer() {
       </Footer.Row> */}
       <Footer.Icon>
         <FontAwesomeIcon icon={faFacebookF} />
-        <Footer.BreakIcon></Footer.BreakIcon>
         <FontAwesomeIcon icon={faInstagram} />
-        <Footer.BreakIcon></Footer.BreakIcon>
         <FontAwesomeIcon icon={faTwitter} />
-        <Footer.BreakIcon></Footer.BreakIcon>
         <FontAwesomeIcon icon={faYoutube} />
       </Footer.Icon>
       <Footer.Row>
