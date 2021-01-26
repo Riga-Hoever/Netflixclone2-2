@@ -10,7 +10,7 @@ function InfoButton() {
       </video>
       )
       <div className="moreInfo">
-        <button />
+        <button className="custom-btn" />
       </div>
     </div>
   );
