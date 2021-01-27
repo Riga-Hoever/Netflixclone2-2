@@ -17,7 +17,7 @@ function Banner() {
       // );
       // return request;
 
-      const response = await Backend.fetchMovies(550);
+      const response = await Backend.fetchMovies(335984);
       setMovie(response.data);
     }
     fetchData();
@@ -53,7 +53,7 @@ function Banner() {
         {/* movie logo*/}
         <img
           className="banner_movielogo"
-          src={movie?.hdmovielogo[0].url}
+          src={movie?.logoUrl}
           alt={movie?.title + "logo"}
         />
 
