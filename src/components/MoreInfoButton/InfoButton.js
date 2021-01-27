@@ -20,9 +20,9 @@ function InfoButton() {
         <div className="showMovie">
         <ReactPlayer link="https://youtu.be/O64Silz-r2w "/>
 
-        <div className="icons">
-          <i class="far fa-thumbs-up"></i>
-          <i class="far fa-thumbs-down"></i>
+        <div className="iconsLikes">
+          <i className="far fa-thumbs-up"/>
+          <i className="far fa-thumbs-down"/>
         </div>
 
       </div>
