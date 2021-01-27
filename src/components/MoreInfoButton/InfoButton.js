@@ -1,19 +1,51 @@
-import React from "react";
-import video from "./movies/Heelal.mp4";
+import React, { useState } from "react";
+import ReactPlayer from 'react-player/youtube'
+import "./InfoButton.css";
+
 
 function InfoButton() {
+
+  const [showMovie, setshowMovie] = useState(false)
+
+  const toggleMovie = () => {
+    setshowMovie(true)
+  }
+
   return (
-    <div>
-      <video autoPlay muted loop>
-        (
-        <source src={video} type="video/mp4" />
-      </video>
-      )
-      <div className="moreInfo">
-        <button className="custom-btn" />
+
+    <div className={`${showMovie ? "moreInfo" : "hidden"}`}>
+    
+      <button onClick={toggleMovie} className="style-btn"> More Info </button>
+      
+        <div className="showMovie">
+        <ReactPlayer link="https://youtu.be/O64Silz-r2w "/>
+
+        <div className="icons">
+          <i class="far fa-thumbs-up"></i>
+          <i class="far fa-thumbs-down"></i>
+        </div>
+
       </div>
     </div>
   );
 }
 
 export default InfoButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
