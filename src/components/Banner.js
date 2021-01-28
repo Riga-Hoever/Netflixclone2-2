@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Backend from "../Backend";
-import YouTube from "react-youtube";
+// import YouTube from "react-youtube";
 import ReactPlayer from 'react-player';
 
 import "./Banner.css";

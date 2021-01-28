@@ -28,6 +28,7 @@ export function FooterContainer() {
         <FontAwesomeIcon icon={faTwitter} />
         <FontAwesomeIcon icon={faYoutube} />
       </Footer.Icon>
+      
       <Footer.Row>
         <Footer.Column>
           <Footer.Link href="#">Investor Relations</Footer.Link>
