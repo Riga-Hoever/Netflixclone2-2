@@ -1,12 +1,34 @@
 .banner {
-    color: white;
-    object-fit: contain;
-    height: 800px;
-  }
+  margin-top: -10vh;
+  color: white;
+  object-fit: contain;
+  height: 60vh;
+}
+
+.player-wrapper {
+  pointer-events: none;
+  z-index: 0;
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+
+.react-player {
+  position: absolute;
+  /* top: 3.75rem; */
+  top: 60px;
+  left: 0;
+}
   
+
+.react-player__play-icon {
+  display: none;
+}
+
+
 .banner_contents {
   margin-left: 30px;
-  padding-top: 350px;
+  /* padding-top: 350px; */
   height: 190px;
 }
 
@@ -59,3 +81,5 @@
 .banner_movielogo {
   width: 20rem;
 }
+
+
