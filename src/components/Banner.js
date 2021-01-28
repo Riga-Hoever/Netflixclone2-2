@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Backend from "../Backend";
-import YouTube from "react-youtube";
 import ReactPlayer from 'react-player';
 
 import "./Banner.css";
@@ -55,7 +54,7 @@ function Banner() {
             <ReactPlayer  
               className='react-player'
               url={`https://youtu.be/${movie?.youtubeKey}`}
-              light={`https://image.tmdb.org/t/p/original${movie?.backdropPath}`}
+              // light={`https://image.tmdb.org/t/p/original${movie?.backdropPath}`}
               controls={false}
               playbackRate = {1}
               width = "100%"
