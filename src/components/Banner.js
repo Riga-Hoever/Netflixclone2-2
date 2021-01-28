@@ -35,7 +35,7 @@ function Banner() {
 
   function toggleColor() {
     const nav = document.querySelector(".nav_container");
-    nav.style.background = "green";
+    nav.style.background = "black";
   }
 
   function onPlayerReady(event) {
