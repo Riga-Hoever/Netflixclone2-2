@@ -2,12 +2,11 @@
   margin-top: -10vh;
   color: white;
   object-fit: contain;
-  height: 60vh;
+  height: 100vh;
 }
 
 .player-wrapper {
   pointer-events: none;
-  z-index: 0;
   position: relative;
   padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
 }
