@@ -1,0 +1,76 @@
+.style-btn {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 1rem;
+}
+.style-btn:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+.moreInfo {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    border-radius: 15px;
+    z-index: 10;
+    background-color: #19181a;
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+  /* .moreInfo > .style-btn {
+  display: hidden;
+  } */
+.hidden {
+    display: none;
+}
+.iconsLikes,
+  i {
+    font-size: 150%;
+    display: flex;
+    padding-left: 1rem;
+}
+.like_buttons {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: inline;
+    vertical-align: middle;
+    margin-top: -6rem;
+}
+.fa-caret-right {
+    position: relative!;
+}
+.container_movie_info {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+.like_styling {
+    flex: 1;
+    border: white solid 1px;
+    border-radius: 50%;
+    background-color: #51515262;
+    padding: 15px;
+    display: block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    z-index: 2;
+}
+.showMovie {
+}

@@ -3,7 +3,8 @@ import Backend from "../Backend";
 import ReactPlayer from "react-player";
 import screenfull from "screenfull";
 // import YouTube from "react-youtube";
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
+import InfoButton from "../components/MoreInfoButton/InfoButton"
 
 import "./Banner.css";
 
@@ -82,14 +83,16 @@ function Banner() {
           className="banner_movielogo"
           src={movie?.logoUrl}
           alt={movie?.title + "logo"}
-        />
+        /> 
+        <h1 className="banner_description">{movie?.overview}</h1>
         <div className="banner_buttons">
           <button className="banner_button" onClick={onPlayerReady}>
             Play
           </button>
-          <button className="banner_button">Meer informatie</button>
+          {/* <button className="banner_button">Meer informatie</button> */}
+          <InfoButton />
         </div>
-        <h1 className="banner_description">{movie?.overview}</h1>
+        
       </div>
 
       <div className="banner_fadeBottom" />
