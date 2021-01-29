@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Backend from "../Backend";
-import ReactPlayer from 'react-player';
+import ReactPlayer from "react-player";
+import screenfull from "screenfull";
 
 import "./Banner.css";
 
 function Banner() {
   const [movie, setMovie] = useState();
-  const [play, setPlay] = useState();
+  const [play, setPlay] = useState(false);
   useEffect(() => {
     async function fetchData() {
       // const request = await axios.get(requests.fetchNetflixOriginals);
@@ -28,13 +29,9 @@ function Banner() {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
 
-  function playTrailer() {
-    setPlay(true);
-  }
-
   function toggleColor() {
     const nav = document.querySelector(".nav_container");
-    nav.style.background = "green";
+    nav.style.background = "black";
   }
 
   function onPlayerReady(event) {
@@ -42,44 +39,42 @@ function Banner() {
     event.target.h.requestFullscreen();
     console.log(arguments);
   }
-  console.log(movie);
 
-  function playing() {
-    setPlay(true);
+  function allowFullscreen() {
+    screenfull.request();
   }
+
+  console.log(movie);
 
   return (
     <header className="banner">
-          <div className='player-wrapper'>
-            <ReactPlayer  
-              className='react-player'
-              url={`https://youtu.be/${movie?.youtubeKey}`}
-              // light={`https://image.tmdb.org/t/p/original${movie?.backdropPath}`}
-              controls={false}
-              playbackRate = {1}
-              width = "100%"
-              height = "100%"
-              muted={true}
-              loop={true}
-              config={{
-                youtube: {
-                  playerVars: {
-                    disable: 0,
-                    autoplay: 1,
-                    playsinline: 1,
-                    showinfo: 0,
-                    rel: 0,
-                    iv_load_policy: 3,
-                    fs: 0,
-                  }
-                } 
-              }}
-              onPlay={toggleColor}
- 
+      <div className="player-wrapper">
+        <ReactPlayer
+          className="react-player"
+          url={`https://youtu.be/${movie?.youtubeKey}`}
+          // light={`https://image.tmdb.org/t/p/original${movie?.backdropPath}`}
+          controls={false}
+          playbackRate={1}
+          width="100%"
+          height="100%"
+          muted={true}
+          loop={true}
+          config={{
+            youtube: {
+              playerVars: {
+                disable: 0,
+                autoplay: 1,
+                playsinline: 1,
+                showinfo: 0,
+                rel: 0,
+                iv_load_policy: 3,
+                fs: 0,
+              },
+            },
+          }}
+        />
+      </div>
 
-/>
-          </div>
-      
       <div className="banner_contents">
         <img
           className="banner_movielogo"
@@ -87,16 +82,16 @@ function Banner() {
           alt={movie?.title + "logo"}
         />
         <div className="banner_buttons">
-          <button className="banner_button" onClick={playTrailer}>Play</button>
+          <button className="banner_button" onClick={onPlayerReady}>
+            Play
+          </button>
           <button className="banner_button">Meer informatie</button>
         </div>
-        <h1 className="banner_description">{truncate(movie?.overview, 200)}</h1>
+        <h1 className="banner_description">{movie?.overview}</h1>
       </div>
 
-      <div className="banner_fadeBottom"/>
-
+      <div className="banner_fadeBottom" />
     </header>
-    
   );
 }
 export default Banner;
