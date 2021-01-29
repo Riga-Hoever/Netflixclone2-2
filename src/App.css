@@ -6,3 +6,7 @@
 .app {
   background-color: #111;
 }
+
+.row-container {
+  margin-top: 80vh;
+}
